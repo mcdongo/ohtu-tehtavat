@@ -23,7 +23,7 @@ class Ostoskori:
         indeksi = self._etsi_indeksi(poistettava)
         if type(indeksi) is int:
             self.kori[indeksi].muuta_lukumaaraa(-1)
-            if self.kori[indeksi].lukumaara == 0:
+            if self.kori[indeksi].lukumaara() == 0:
                 self.kori.pop(indeksi)
 
 
