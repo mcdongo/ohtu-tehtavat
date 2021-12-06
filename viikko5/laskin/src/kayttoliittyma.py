@@ -14,7 +14,7 @@ class Kayttoliittyma:
     def __init__(self, sovellus, root):
         self._sovellus = sovellus
         self._root = root
-        self._syotemuisti = []
+
 
         self._komennot = {
             Komento.SUMMA: Summa(self._sovellus, self._lue_syote),
